@@ -16,7 +16,8 @@ after_success:
   - docker build -t scottcollins/fibonacci-nginx:latest ./nginx
   
   # Log into docker for this terminal session
-  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USER" --password-stdin
+  - docker login -u "$DOCKER_USER" -p "$DOCKER_PASSWORD"
+  # echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USER" --password-stdin
 
   # Push images to the docker hub repo
   - docker push scottcollins/fibonacci-client:latest
