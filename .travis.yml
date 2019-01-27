@@ -17,8 +17,7 @@ after_success:
   
   # Log into docker for this terminal session
   - docker login -u "$DOCKER_USER" -p "$DOCKER_PASSWORD"
-  # echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USER" --password-stdin
-
+  
   # Push images to the docker hub repo
   - docker push scottcollins/fibonacci-client:latest
   - docker push scottcollins/fibonacci-api:latest
