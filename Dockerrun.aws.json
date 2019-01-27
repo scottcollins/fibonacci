@@ -48,7 +48,7 @@
             "environment": [
                 { 
                     "name": "REDIS_HOST",
-                    "value": ""
+                    "value": "fibonacci-redis.x8xj0w.0001.use1.cache.amazonaws.com"
                 },
                 { 
                     "name": "REDIS_PORT",
