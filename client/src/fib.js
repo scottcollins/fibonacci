@@ -9,6 +9,8 @@ class Fib extends Component {
     };
     
     componentDidMount() {
+        console.log("component was mounted");
+
         this.fetchValues();
         this.fetchIndexes();
     }
